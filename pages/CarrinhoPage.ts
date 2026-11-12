@@ -1,8 +1,6 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 import { Cabecalho } from './Cabecalho';
 import { paraNumero } from '../utils/moeda';
-
-/** Tela do carrinho: itens, quantidades, subtotais, total e finalização. */
 export class CarrinhoPage {
   readonly cabecalho: Cabecalho;
   readonly total: Locator;
@@ -23,7 +21,6 @@ export class CarrinhoPage {
     this.botaoCarrinhoVazio = page.locator('main').getByRole('button');
   }
 
-  /** Linha do item no carrinho: o menor bloco com o título e o campo de quantidade. */
   item(titulo: string): Locator {
     return this.page
       .locator('main div')

@@ -1,7 +1,3 @@
-/**
- * Catálogo exibido pela aplicação (fonte: API /api/movies consumida pela Home).
- * Usado para calcular os valores esperados nos testes, em vez de fixar totais no código.
- */
 export const FILMES = {
   VIUVA_NEGRA: { titulo: 'Viúva Negra', preco: 9.99 },
   SHANG_CHI: { titulo: 'Shang-chi', preco: 30.99 },

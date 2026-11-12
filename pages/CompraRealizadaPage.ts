@@ -1,7 +1,5 @@
 import { type Locator, type Page } from '@playwright/test';
 import { Cabecalho } from './Cabecalho';
-
-/** Tela de pedido confirmado. */
 export class CompraRealizadaPage {
   readonly cabecalho: Cabecalho;
   readonly mensagemSucesso: Locator;

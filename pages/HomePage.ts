@@ -16,7 +16,6 @@ export class HomePage {
     await expect(this.titulosDosFilmes.first()).toBeVisible();
   }
 
-  /** Card do filme: o menor bloco que contém o título do filme. */
   card(titulo: string): Locator {
     return this.page
       .locator('main div')
@@ -34,7 +33,6 @@ export class HomePage {
     }
   }
 
-  /** Quantidade exibida no próprio botão do filme. */
   async quantidadeNoBotao(titulo: string): Promise<number> {
     const texto = await this.botaoAdicionar(titulo).innerText();
     return Number(texto.match(/\d+/)?.[0]);
